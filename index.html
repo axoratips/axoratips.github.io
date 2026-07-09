@@ -1,0 +1,119 @@
+<!DOCTYPE html><html lang="pt-BR"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ÁXORA · Sports Intelligence</title>
+<meta name="description" content="ÁXORA Tips — inteligência esportiva com resultado público e auditável.">
+<style>
+:root{--navy:#0A0E1A;--cy:#22D3EE;--cyd:#0E7490;--gold:#FCD34D;--goldd:#B45309;--grn:#34D399;--ink:#EAF1F8;--mut:#8A9BB0;--line:#1e2c46;--card:#0f1626;}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#05070c}
+body{font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);min-height:100vh;
+ background:radial-gradient(130% 70% at 50% -5%,#16233d 0%,#0a0f1c 45%,#05070c 100%);
+ padding:30px 18px 46px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.wrap{max-width:472px;margin:0 auto}
+.slogan{text-align:center;font-size:13px;letter-spacing:.5px;color:#c6d2df;margin-bottom:6px}
+.ecgwrap{position:relative;height:52px;margin:2px 0 4px}
+.ecg{width:100%;height:52px;display:block}
+.ecg-base{fill:none;stroke:#123449;stroke-width:2}
+.ecg-run{fill:none;stroke:var(--cy);stroke-width:2.6;stroke-linecap:round;
+ filter:drop-shadow(0 0 5px var(--cy)) drop-shadow(0 0 12px rgba(34,211,238,.6));
+ stroke-dasharray:64 936;animation:run 2.6s linear infinite}
+@keyframes run{from{stroke-dashoffset:1000}to{stroke-dashoffset:0}}
+.brand{text-align:center;margin:2px 0 20px}
+.brand .w{font-size:26px;font-weight:800;letter-spacing:5px}
+.brand .t{font-size:9.5px;letter-spacing:5px;color:var(--mut);font-weight:700;margin-top:1px}
+.card{display:block;text-decoration:none;color:var(--ink);background:linear-gradient(180deg,#101a2c,#0c1322);
+ border:1px solid var(--line);border-radius:16px;padding:15px 16px;margin-bottom:13px;position:relative;
+ overflow:hidden;transition:transform .16s,border-color .16s,box-shadow .16s}
+.card:hover{transform:translateY(-2px)}
+.card:before{content:"";position:absolute;top:0;left:-60%;width:45%;height:100%;
+ background:linear-gradient(100deg,transparent,rgba(255,255,255,.10),transparent);transition:left .5s;pointer-events:none}
+.card:hover:before{left:130%}
+.row{display:flex;align-items:center;gap:13px}
+.chip{width:42px;height:42px;border-radius:11px;display:flex;align-items:center;justify-content:center;
+ font-size:20px;flex:none;background:#0b1220;border:1px solid var(--line)}
+.tx{flex:1;min-width:0}
+.tt{font-weight:700;font-size:15.5px;display:flex;align-items:center;gap:8px}
+.sb{font-size:12px;color:var(--mut);margin-top:2px;line-height:1.35}
+.arw{color:var(--mut);font-size:20px;flex:none;transition:transform .25s}
+.pill{font-size:9px;font-weight:800;letter-spacing:.4px;padding:3px 8px;border-radius:20px;white-space:nowrap}
+/* VIP hero */
+.vip{border-color:rgba(252,211,77,.5);background:linear-gradient(180deg,rgba(252,211,77,.15),rgba(180,83,9,.06)),linear-gradient(180deg,#141019,#0f0c14);
+ box-shadow:0 0 0 rgba(252,211,77,0);animation:glow 3.4s ease-in-out infinite}
+@keyframes glow{0%,100%{box-shadow:0 0 14px rgba(252,211,77,.10)}50%{box-shadow:0 0 26px rgba(252,211,77,.30)}}
+.vip:hover{border-color:var(--gold);box-shadow:0 0 30px rgba(252,211,77,.42)}
+.vip .chip{background:rgba(252,211,77,.14);border-color:rgba(252,211,77,.4);color:var(--gold)}
+.vip .head{cursor:pointer}
+.vip .pill{background:var(--gold);color:#1a1204}
+.vip.open .arw{transform:rotate(180deg)}
+.panel{max-height:0;overflow:hidden;transition:max-height .38s ease;margin-top:0}
+.vip.open .panel{max-height:430px;margin-top:12px}
+.plan{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);
+ background:#0c1322;border:1px solid var(--line);border-radius:11px;padding:11px 13px;margin-top:9px;transition:.15s}
+.plan:hover{border-color:var(--gold);box-shadow:0 0 16px rgba(252,211,77,.28);transform:translateX(3px)}
+.plan .pn{font-weight:700;font-size:14px;flex:1}
+.plan .pp{font-size:12px;color:var(--gold);font-weight:700}
+.plan .pg{font-size:9px;font-weight:800;background:rgba(252,211,77,.15);color:var(--gold);padding:2px 7px;border-radius:20px;margin-left:6px}
+/* FREE */
+.free{border-color:rgba(34,211,238,.42)}
+.free:hover{border-color:var(--cy);box-shadow:0 0 26px rgba(34,211,238,.35)}
+.free .chip{background:rgba(34,211,238,.13);border-color:rgba(34,211,238,.4);color:var(--cy)}
+.free .pill{background:rgba(34,211,238,.16);color:var(--cy)}
+/* trust */
+.tp:hover{border-color:#3a4a68;box-shadow:0 0 20px rgba(34,211,238,.18)}
+.tp .chip{color:var(--cy)}
+.tg .chip{color:var(--grn)}
+.tg:hover{border-color:rgba(52,211,153,.5);box-shadow:0 0 20px rgba(52,211,153,.20)}
+.divi{display:flex;align-items:center;gap:10px;color:var(--mut);font-size:10px;letter-spacing:3px;font-weight:700;margin:20px 2px 12px}
+.divi:before,.divi:after{content:"";flex:1;height:1px;background:var(--line)}
+.foot{text-align:center;color:var(--mut);font-size:11px;margin-top:24px;line-height:1.8}
+.foot .h{color:#c6d2df;font-weight:700;letter-spacing:1px;font-size:12px}
+.foot a{color:var(--mut)}
+</style></head><body><div class="wrap">
+
+<div class="slogan">Clareza pra sua aposta.</div>
+<div class="ecgwrap"><svg class="ecg" viewBox="0 0 400 52" preserveAspectRatio="none">
+ <path class="ecg-base" d="M0,26 H150 L160,26 L168,10 L176,42 L184,15 L192,26 L250,26 L260,20 L268,30 L276,26 H400"/>
+ <path class="ecg-run"  pathLength="1000" d="M0,26 H150 L160,26 L168,10 L176,42 L184,15 L192,26 L250,26 L260,20 L268,30 L276,26 H400"/>
+</svg></div>
+<div class="brand"><div class="w">ÁXORA</div><div class="t">SPORTS INTELLIGENCE</div></div>
+
+<div class="card vip" id="vip">
+  <div class="row head" onclick="document.getElementById('vip').classList.toggle('open')">
+    <div class="chip">&#128081;</div>
+    <div class="tx"><div class="tt">Entrar no VIP <span class="pill">TURMA FUNDADORA</span></div>
+      <div class="sb">Pacote completo &middot; toque e escolha seu plano</div></div>
+    <div class="arw">&#9662;</div>
+  </div>
+  <div class="panel">
+    <a class="plan" href="https://pay.cakto.com.br/gcnfown_951387" target="_blank" rel="noopener"><span class="pn">&#128293; Fundador</span><span class="pp">R$ 239,99/ano</span><span class="pg">SÓ 50 VAGAS</span></a>
+    <a class="plan" href="https://pay.cakto.com.br/35njfd3_951317" target="_blank" rel="noopener"><span class="pn">&#11088; Anual</span><span class="pp">R$ 299,99/ano</span><span class="pg">MELHOR VALOR</span></a>
+    <a class="plan" href="https://pay.cakto.com.br/o7ekszn_969744" target="_blank" rel="noopener"><span class="pn">Mensal</span><span class="pp">R$ 37,99/mês</span></a>
+    <a class="plan" href="https://pay.cakto.com.br/q7n2w6f_969773" target="_blank" rel="noopener"><span class="pn">Trimestral</span><span class="pp">R$ 99,99 / 3m</span></a>
+    <a class="plan" href="https://pay.cakto.com.br/b27z88e_951367" target="_blank" rel="noopener"><span class="pn">&#9854; Vitalício</span><span class="pp">R$ 1.997 único</span></a>
+  </div>
+</div>
+
+<a class="card free" href="https://t.me/AxoraTips" target="_blank" rel="noopener"><div class="row">
+  <div class="chip">&#128241;</div>
+  <div class="tx"><div class="tt">Canal FREE no Telegram <span class="pill">PALPITE GRÁTIS</span></div>
+   <div class="sb">1 palpite grátis todo dia &middot; sem custo</div></div>
+  <div class="arw">&rsaquo;</div></div></a>
+
+<div class="divi">TRANSPARÊNCIA AO VIVO</div>
+
+<a class="card tp" href="https://painel.axoratips.com/" target="_blank" rel="noopener"><div class="row">
+  <div class="chip">&#128202;</div>
+  <div class="tx"><div class="tt">Painel de resultados ao vivo</div>
+   <div class="sb">Histórico público &middot; green e red em tempo real</div></div>
+  <div class="arw">&rsaquo;</div></div></a>
+
+<a class="card tg" href="https://docs.google.com/spreadsheets/d/1esNUu54izfG-AKhIhwTcSsOjySW91bw-MyP1IGJMHOg/edit?gid=1893420352#gid=1893420352" target="_blank" rel="noopener"><div class="row">
+  <div class="chip">&#128203;</div>
+  <div class="tx"><div class="tt">Planilha auditável</div>
+   <div class="sb">Nada apagado, nada editado &middot; cada green e cada red</div></div>
+  <div class="arw">&rsaquo;</div></div></a>
+
+<div class="foot"><span class="h">@AxoraTips</span><br>
+ +18 &middot; jogue com responsabilidade &middot; sem promessa de lucro<br>
+ <a href="mailto:suporte@axoratips.com">suporte@axoratips.com</a></div>
+</div></body></html>
