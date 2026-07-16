@@ -53,6 +53,13 @@ body{font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink)
 .plan .pn{font-weight:700;font-size:14px;flex:1}
 .plan .pp{font-size:12px;color:var(--gold);font-weight:700}
 .plan .pg{font-size:9px;font-weight:800;background:rgba(252,211,77,.15);color:var(--gold);padding:2px 7px;border-radius:20px;margin-left:6px}
+/* Fundador: card com 3 linhas (nome+preço · aviso de reajuste · selo de vagas) */
+.plan.pf{flex-direction:column;align-items:stretch;gap:6px}
+.plan.pf .pftop{display:flex;align-items:center}
+.plan.pf .pftop .pn{flex:1}
+.plan.pf .psub{font-size:10.5px;font-weight:600;color:var(--mut);line-height:1.35}
+.plan.pf .psub s{color:#c6d2df}
+.plan.pf .pg{align-self:flex-start;margin-left:0}
 /* FREE */
 .free{border-color:rgba(34,211,238,.42)}
 .free:hover{border-color:var(--cy);box-shadow:0 0 26px rgba(34,211,238,.35)}
@@ -87,7 +94,11 @@ body{font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink)
   <div class="panel">
     <a class="plan" href="https://pay.cakto.com.br/o7ekszn_969744" target="_blank" rel="noopener"><span class="pn">&#128197; Mensal</span><span class="pp">R$ 37,99/mês</span></a>
     <a class="plan" href="https://pay.cakto.com.br/q7n2w6f_969773" target="_blank" rel="noopener"><span class="pn">&#128200; Trimestral</span><span class="pp">R$ 99,99 / 3m</span></a>
-    <a class="plan" href="https://pay.cakto.com.br/gcnfown_951387" target="_blank" rel="noopener"><span class="pn">&#128293; Fundador</span><span class="pg">SÓ 50 VAGAS · ATÉ 31/08</span><span class="pp">R$ 239,99/ano</span></a>
+    <a class="plan pf" href="https://pay.cakto.com.br/gcnfown_951387" target="_blank" rel="noopener">
+      <span class="pftop"><span class="pn">&#128293; Fundador</span><span class="pp">R$ 239,99/ano</span></span>
+      <span class="psub">Trava esse preço pra sempre &middot; depois volta a <s>R$ 299,99</s></span>
+      <span class="pg">SÓ 50 VAGAS · ATÉ 31/08</span>
+    </a>
     <a class="plan" href="https://pay.cakto.com.br/b27z88e_951367" target="_blank" rel="noopener"><span class="pn">&#9854; Vitalício</span><span class="pp">R$ 1.997 único</span></a>
     <!-- ANUAL escondido durante o lançamento do Fundador. Reativar quando as 50 vagas acabarem (é só apagar estes comentarios): -->
     <!-- <a class="plan" href="https://pay.cakto.com.br/35njfd3_951317" target="_blank" rel="noopener"><span class="pn">&#11088; Anual</span><span class="pg">MELHOR VALOR</span><span class="pp">R$ 299,99/ano</span></a> -->
